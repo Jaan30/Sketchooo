@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-lozdolls-fontdemo: "Lozdolls FontDEMO";
+  --font-poppins: Poppins;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+
+  /* Colors */
+  --color-lightcoral-100: #f6828a;
+  --color-black: #000;
+
+  /* border radiuses */
+  --br-6xs: 7px;
+}
