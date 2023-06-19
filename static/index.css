@@ -1,0 +1,340 @@
+vector-icon {
+    position: absolute;
+    height: 23.1%;
+    width: 9.79%;
+    top: 80.39%;
+    right: 89.03%;
+    bottom: -3.49%;
+    left: 1.18%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .ff5d05a-0436-49bf-a499-629af15-icon {
+    position: absolute;
+    top: 39px;
+    left: 88px;
+    width: 270px;
+    height: 310px;
+    object-fit: cover;
+  }
+  .down-child,
+  .vector-icon1 {
+    position: absolute;
+    top: 49px;
+    left: 282px;
+    width: 796px;
+    height: 378.54px;
+  }
+  .vector-icon1 {
+    height: 16.51%;
+    width: 7.87%;
+    top: -7.89%;
+    right: -0.44%;
+    bottom: 91.38%;
+    left: 92.57%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .af004e44-7f04-4500-9dab-cf1747-icon,
+  .bd-41fc-8de7-4f2f8fc30337-1-icon {
+    position: absolute;
+    top: 389px;
+    left: 1091px;
+    width: 246.28px;
+    height: 310px;
+    object-fit: cover;
+  }
+  .bd-41fc-8de7-4f2f8fc30337-1-icon {
+    left: 409px;
+    width: 270px;
+  }
+  .vector-icon2,
+  .vector-icon3 {
+    position: absolute;
+    height: 19.74%;
+    width: 6.59%;
+    top: 80.26%;
+    right: 6.19%;
+    bottom: 0;
+    left: 87.22%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .vector-icon3 {
+    top: 77.63%;
+    right: 51.98%;
+    bottom: 2.63%;
+    left: 41.44%;
+  }
+  .upload-cloud-icon {
+    position: absolute;
+    top: 117px;
+    left: 844px;
+    width: 112px;
+    height: 113px;
+    overflow: hidden;
+  }
+  .draw {
+    position: absolute;
+    top: 304px;
+    left: 185px;
+  }
+  .capture,
+  .download,
+  .upload {
+    position: absolute;
+    top: 650px;
+    left: 498px;
+    display: inline-block;
+    width: 92px;
+  }
+  .download,
+  .upload {
+    top: 304px;
+    left: 854px;
+  }
+  .download {
+    top: 653px;
+    left: 1175px;
+    width: 115px;
+  }
+  .draw1 {
+    position: absolute;
+    top: 304px;
+    left: 186px;
+  }
+  .material-symbolsdownload {
+    position: absolute;
+    top: 648px;
+    left: 1091px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+  }
+  .down,
+  .down-item {
+    position: absolute;
+    top: 649px;
+    left: 1138px;
+    width: 37px;
+    height: 37px;
+  }
+  .down {
+    top: 755.45px;
+    left: 1px;
+    background-color: #bebf85;
+    width: 1518px;
+    height: 764.55px;
+  }
+  .frame-child {
+    position: absolute;
+    top: -1px;
+    left: calc(50% - 296px);
+    border-radius: 24px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border: 2px dashed #ff7f88;
+    box-sizing: border-box;
+    width: 592px;
+    height: 349.07px;
+  }
+  .drag-drop,
+  .max-10mb,
+  .or-select-files {
+    position: absolute;
+    font-family: var(--font-poppins);
+    text-align: center;
+    display: inline-block;
+  }
+  .drag-drop {
+    top: 92.39px;
+    left: 0;
+    font-size: 32px;
+    color: var(--color-black);
+    width: 234.34px;
+    height: 42.15px;
+  }
+  .max-10mb,
+  .or-select-files {
+    top: 134.54px;
+    left: 6.64px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.75);
+    width: 216.32px;
+    height: 69.05px;
+  }
+  .max-10mb {
+    top: 256.51px;
+    left: 65.46px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.72);
+    width: 94.88px;
+    height: 15.25px;
+  }
+  .upload-cloud-icon1 {
+    position: absolute;
+    top: 0;
+    left: 77.01px;
+    width: 76.53px;
+    height: 82.03px;
+    overflow: hidden;
+  }
+  .drag-drop-parent {
+    position: absolute;
+    top: 39.44px;
+    left: 174.63px;
+    width: 234.34px;
+    height: 271.75px;
+  }
+  .rectangle-parent {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 348px;
+    left: 465px;
+    width: 590px;
+    height: 347.07px;
+  }
+  .login {
+    position: relative;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
+    text-align: left;
+  }
+  .login-wrapper {
+    cursor: pointer;
+    border: 0.1rem solid var(--color-lightcoral-100);
+    padding: 0.8571% 1.5455%;
+    background-color: transparent;
+    position: absolute;
+    top: 8.7143%; /* (67px / containerHeight) * 100 */
+    left: 88.3273%; /* (1315px / containerWidth) * 100 */
+    border-radius: var(--br-6xs);
+    box-sizing: border-box;
+    width: 8.9636%; /* (116px / containerWidth) * 100 */
+    height: 6.5354%; /* (50px / containerHeight) * 100 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .vector-icon4,
+  .vector-icon5 {
+    position: absolute;
+    height: 16.17%;
+    width: 18.57%;
+    top: 84.16%;
+    right: 81.36%;
+    bottom: -0.33%;
+    left: 0.07%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .vector-icon5 {
+    height: 36.41%;
+    width: 12.7%;
+    top: 42.56%;
+    right: -3.16%;
+    bottom: 21.03%;
+    left: 90.46%;
+  }
+  .sketchooo-1-icon {
+    position: absolute;
+    top: 77px;
+    left: 92px;
+    width: 155px;
+    height: 40.43px;
+    object-fit: cover;
+  }
+  .frame-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-6xs);
+    background-color: var(--color-lightcoral-100);
+    width: 116px;
+    height: 50px;
+  }
+  .sign-up {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
+    text-align: left;
+    display: inline-block;
+    width: 90px;
+  }
+  .rectangle-group {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 8.7143%; /* (67px / containerHeight) * 100 */
+    left: 80.3273%; /* (1179px / containerWidth) * 100 */
+    width: 9.9636%; /* (116px / containerWidth) * 100 */
+    height: 3.5354%; /* (50px / containerHeight) * 100 */
+  }
+  
+  .vector-icon6 {
+    position: absolute;
+    height: 20.19%;
+    width: 9.05%;
+    top: 34.01%;
+    right: 90.95%;
+    bottom: 45.8%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .magic {
+    position: absolute;
+    top: 194px;
+    left: 559.9px;
+  }
+  .upload-your-sketch {
+    position: absolute;
+    top: 20.7143%; /* (138px / containerHeight) * 100 */
+    left: 29.691%; /* (436.9px / containerWidth) * 100 */
+    font-size: 35.8%; /* (48px / containerWidth) * 100 */
+    font-family: "Segoe Script", cursive;
+    font-weight: bold;
+    color: #393838;
+  }
+  
+  .hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1520px;
+    height: 753px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 96px;
+    color: var(--color-lightcoral-100);
+    font-family: var(--font-lozdolls-fontdemo);
+  }
+  .original {
+    position: relative;
+    background-color: #f1e3d3;
+    width: 100%;
+    height: 1520px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    font-family: var(--font-poppins);
+  }
+  
