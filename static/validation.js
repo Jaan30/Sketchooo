@@ -89,4 +89,19 @@
     droppable.appendChild(draggableElement);
   });
   
+ 
+  function previewImage(event) {
+    var reader = new FileReader();
+    var imagePreview = document.getElementById("imagePreview");
+    var image = imagePreview.querySelector("img");
   
+    reader.onload = function () {
+      image.src = reader.result;
+    };
+  
+    reader.readAsDataURL(event.target.files[0]);
+  }
+
+  function submitForm() {
+    removeTable();
+  }

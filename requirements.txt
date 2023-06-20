@@ -7,3 +7,9 @@ uvicorn
 python-dotenv
 pandas
 Jinja2==3.0.3
+tensorflow
+google-cloud-bigquery
+db-dtypes
+google-cloud-storage
+tensorrt
+python-multipart
