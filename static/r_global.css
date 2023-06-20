@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --title: Poppins;
+    --button-label: Roboto;
+  
+    /* font sizes */
+    --font-size-xs: 12px;
+    --button-label-size: 15px;
+    --font-size-2xs: 11px;
+    --title-size: 20px;
+  
+    /* Colors */
+    --white-ffffff: #fff;
+    --black-900-1a1a1a: #1a1a1a;
+    --black-800-333333: #333;
+    --black-100-e5e5e5: #e5e5e5;
+    --color-gainsboro-100: rgba(217, 217, 217, 0.69);
+    --color-lightcoral: #f6828a;
+    --system-green-26a212: #26a212;
+    --system-orange-ff9500: #ff8c00;
+    --system-red-ff3b30: #ff3b30;
+    --system-blue-007aff: #007aff;
+  
+    /* Gaps */
+    --gap-5xl: 24px;
+    --gap-5xs: 8px;
+  
+    /* Paddings */
+    --padding-29xl: 48px;
+    --padding-5xl: 24px;
+    --padding-3xs: 10px;
+    --padding-base: 16px;
+  
+    /* border radiuses */
+    --br-7xs: 6px;
+    --br-11xl: 30px;
+  }
+  
+  

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+  <script type="text/javascript" src="static/validation.js"></script>
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="static/global.css" />
     <link rel="stylesheet" href="static/index.css" />
     <link
@@ -58,18 +60,15 @@
       <div class="hero">
         <button class="rectangle-parent">
           <div class="frame-child"></div>
-          <div class="drag-drop-parent">
-            <div class="drag-drop">Drag & Drop</div>
+          <div class="drag-drop-parent" id="droppable">
+            <div class="drag-drop">Drag &amp; Drop</div>
             <div class="or-select-files">or select files from device</div>
             <div class="max-10mb">max. 10MB</div>
-            <img
-              class="upload-cloud-icon1"
-              alt=""
-              src="static/public/uploadcloud1.svg"
-            />
+            <img class="upload-cloud-icon1" alt="" src="static/public/uploadcloud1.svg" />
           </div>
         </button>
-        <button class="login-wrapper">
+        
+        <button class="login-wrapper" onclick="redirectToPage('static/log.html')">
           <div class="login">Login</div>
         </button>
         <img class="vector-icon4" alt="" src="static/public/vector4.svg" />
@@ -82,12 +81,12 @@
           src="static/public/sketchooo-1@2x.png"
         />
 
-        <button class="rectangle-group">
+        <button class="rectangle-group" onclick="redirectToPage('static/reg.html')">
           <div class="frame-item"></div>
           <div class="sign-up">Sign up</div>
         </button>
+        
         <img class="vector-icon6" alt="" src="static/public/vector6.svg" />
-
         <div class="magic">MAGIC !</div>
         <div class="upload-your-sketch">Upload Your Sketch And See The</div>
       </div>
