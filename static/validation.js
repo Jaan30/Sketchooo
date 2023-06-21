@@ -1,7 +1,7 @@
   function redirectToPage(page) {
     window.location.href = page;
   }
-  
+
   function register() {
     var email = document.forms.Reg.email.value;
     var password = document.forms.Reg.password.value;
@@ -90,18 +90,24 @@
   });
   
  
-  function previewImage(event) {
-    var reader = new FileReader();
-    var imagePreview = document.getElementById("imagePreview");
-    var image = imagePreview.querySelector("img");
+  function previewImage(event){
+    const reader = new FileReader();
   
-    reader.onload = function () {
-      image.src = reader.result;
-    };
+    // Define a callback function to be executed when the FileReader has finished reading the file
+    reader.onload = function (event) {
+      // Get the URL of the uploaded image
+    const imageUrl = event.target.result;
+      
+      // Create an img element and set its src attribute to the uploaded image URL
+    const uploadedImage = document.createElement('img');
+    uploadedImage.src = imageUrl;
   
-    reader.readAsDataURL(event.target.files[0]);
+    // Append the uploaded image element to a container on the page
+    const imageContainer = document.querySelector('#imagePreview');
+    imageContainer.innerHTML = ''; // Clear previous uploaded images
+    imageContainer.appendChild(uploadedImage);
+    }
   }
-
   function submitForm() {
     removeTable();
-  }
+}

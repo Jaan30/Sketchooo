@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <script type="text/javascript" src="static/validation.js"></script>
-
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width, initial-scale=1.0" />
@@ -74,15 +73,14 @@
         <div class="form-group">
           <div class="image-preview" id="imagePreview">
             <img src="" alt="Image Preview">
-          </div>
+          </div>          
           <input type="file" class="form-control-file" id="xray" name="image" accept="image/*" required>
         </div>
-        <button type="submit" class="btn btn-primary" >Submit</button>
+        <button type="submit" class="btn btn-primary" onclick = "previewImage()">Submit</button>
 
       </form>
-        <div>{{ img }}</div>
-        <div>{{ shape }}</div>
-        
+
+      <p>{{ img }}</p>
 
         <button class="login-wrapper" onclick="redirectToPage('static/log.html')">
           <div class="login">Login</div>

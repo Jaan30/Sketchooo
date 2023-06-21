@@ -11,5 +11,5 @@ tensorflow
 google-cloud-bigquery
 db-dtypes
 google-cloud-storage
-tensorrt
 python-multipart
+pillow
