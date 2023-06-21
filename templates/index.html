@@ -59,29 +59,31 @@
       </div>
       <!-- <div class="hero">
         <button class="rectangle-parent">
-          <div class="frame-child"></div>
+          label for="real-file" class="upload-button">
+              <img class="upload-cloud-icon1" alt="" src="./public/uploadcloud1.svg" />
+            </label>
           <div class="drag-drop-parent" id="droppable">
-            <div class="drag-drop">Drag &amp; Drop</div>
+            <div class="drag-drop">Upload here</div>
             <div class="or-select-files">or select files from device</div>
             <div class="max-10mb">max. 10MB</div>
             <img class="upload-cloud-icon1" alt="" src="static/public/uploadcloud1.svg" />
           </div>
         </button> 
       </div>-->
-
+      <form action = "/upload" method = "POST" enctype = "multipart/form-data"> 
         <div class="form-group">
           <div class="image-preview" id="imagePreview">
             <img src="" alt="Image Preview">
           </div>
-          <input type="file" class="form-control-file" id="xray" name="image" accept="image/*"
-            onchange="previewImage(event)" required>
+          <input type="file" class="form-control-file" id="xray" name="image" accept="image/*" required>
         </div>
-        <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
-        <img src="{{ img }}" >
+        <button type="submit" class="btn btn-primary" >Submit</button>
+
+      </form>
+        <div>{{ img }}</div>
+        <div>{{ shape }}</div>
         
 
-
-        
         <button class="login-wrapper" onclick="redirectToPage('static/log.html')">
           <div class="login">Login</div>
         </button>
