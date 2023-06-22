@@ -1,7 +1,7 @@
 from fastapi import FastAPI 
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
-
+import base64
 from google.cloud import bigquery, storage
 from google.oauth2 import service_account
 import tensorflow as tf
@@ -55,7 +55,11 @@ async def upload_image(request: Request,image:Annotated[UploadFile, File(...)]):
     
     predictions = (predictions + 0.5) / 2.0
     integer_rgb_array = np.uint8((predictions + 0.5) * 255)
-    predicted_image = Image.fromarray(integer_rgb_array, mode = "RGB")
-
+    # predicted_image = Image.fromarray(integer_rgb_array, mode = "RGB")
+    predicted_image = Image.fromarray(integer_rgb_array)
+    byte_data=io.BytesIO()
+    predicted_image.save(byte_data,format= 'PNG')
+    byte_data=byte_data.getvalue()
+    encoded_img=base64.b64encode(byte_data).decode('utf-8')
     # print(predictions)
-    return templates.TemplateResponse("index.html", {"request": request, "img":predicted_image, "shape": shape})
+    return templates.TemplateResponse("index.html", {"request": request, "img":encoded_img, "shape": shape})
