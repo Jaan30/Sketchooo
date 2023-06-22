@@ -166,12 +166,32 @@
   height: 69.05px;
 }
 .max-10mb {
-  top: 256.51px;
+  top: 270.51px;
   left: 65.46px;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.72);
   width: 94.88px;
   height: 15.25px;
+}
+.submit {
+  position: absolute;
+  top: 570.76px;
+  left: 530.46px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.72);
+  width: 94.88px;
+  height: 20.25px;
+}
+.pred
+{
+    border: none;
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 420px;
+    left: 750px;
+  
 }
 .upload-cloud-icon1 {
   position: absolute;
@@ -357,8 +377,6 @@
 .rectangle-parent:hover {
   background-color: rgba(234, 226, 205, 0.696);
 }
-
-
 
 .image-preview {
   width: 300px;

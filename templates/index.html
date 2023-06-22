@@ -56,32 +56,37 @@
         <div class="material-symbolsdownload"></div>
         <img class="down-item" alt="" src="static/public/group-9.svg" />
       </div>
-      <!-- <div class="hero">
+      <div class="hero">
         <button class="rectangle-parent">
-          label for="real-file" class="upload-button">
-              <img class="upload-cloud-icon1" alt="" src="./public/uploadcloud1.svg" />
-            </label>
-          <div class="drag-drop-parent" id="droppable">
-            <div class="drag-drop">Upload here</div>
-            <div class="or-select-files">or select files from device</div>
+          <div class="frame-child"></div>
+          <label for="imageUpload">
+              <img class="upload-cloud-icon1" alt="" src="static/public/uploadcloud1.svg">
+              <div class="drag-drop">Upload</div>
+            <div class="or-select-files">your files</div>
             <div class="max-10mb">max. 10MB</div>
-            <img class="upload-cloud-icon1" alt="" src="static/public/uploadcloud1.svg" />
-          </div>
-        </button> 
-      </div>-->
+            
+            <!-- <div><input type="submit" class="submit"></div> -->
+            <div class="drag-drop-parent">
+            
+            <!-- <a href="upload.html"> -->
+            <!-- <img class="upload-cloud-icon1" alt="" src="./public/uploadcloud1.svg"> -->
+            <!-- </a> -->
+
+            <!-- <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+            <div id="imageContainer"></div> -->
+        
       <form action = "/upload" method = "POST" enctype = "multipart/form-data"> 
         <div class="form-group">
-          <div class="image-preview" id="imagePreview">
-            <img src="" alt="Image Preview">
+          <!-- <div class="image-preview" id="imagePreview">
+            <img src="" alt="Image Preview"> -->
           </div>          
-          <input type="file" class="form-control-file" id="xray" name="image" accept="image/*" required>
+          <input type="file" class="form-control-file" name="image" accept="image/*" required>
         </div>
-        <button type="submit" class="btn btn-primary" onclick = "previewImage()">Submit</button>
+        <button type="submit" class="submit" onclick = "previewImage()">Submit</button>
 
       </form>
-
-     <img src="data:image/png;base64,{{img}}">
-
+      </label>
+     <img class="pred" src="data:image/png;base64,{{img}}">
         <button class="login-wrapper" onclick="redirectToPage('static/log.html')">
           <div class="login">Login</div>
         </button>
