@@ -86,7 +86,30 @@
 
       </form>
       </label>
-     <img class="pred" src="data:image/png;base64,{{img}}">
+     <img id="myImage" class="pred" src="data:image/png;base64,{{img}}">
+
+     <!-- <a class="download" href="data:image/png;base64,{{img}}">Download</a> -->
+
+     <button type="button" class="download" data-download="myImage">Download Image</button>
+     <script>
+     const downloadLinks = document.querySelectorAll(" [data-download]");
+     downloadLinks.forEach(button => {
+        const id= button.dataset. download;
+        const image = document.getElementById(id);
+        const a = document.createElement("a");
+        a.href= image.src;
+        a.download = "";
+        a.style.display = "none";
+   
+        button.addEventListener("click", () => {
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+     });
+     </script>
+
+
         <button class="login-wrapper" onclick="redirectToPage('static/log.html')">
           <div class="login">Login</div>
         </button>

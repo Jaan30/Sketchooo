@@ -72,4 +72,4 @@ async def upload_image(request: Request,image:Annotated[UploadFile, File(...)]):
     byte_data=byte_data.getvalue()
     encoded_img=base64.b64encode(byte_data).decode('utf-8')
     # print(predictions)
-    return templates.TemplateResponse("index.html", {"request": request, "img":encoded_img, "shape": shape})
+    return templates.TemplateResponse("index.html", {"request": request, "img":encoded_img})
