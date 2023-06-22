@@ -35,14 +35,24 @@ img="https://storage.cloud.google.com/hand-sketches/n07739125_5365-1.png"
 @app.post("/upload")
 async def upload_image(request: Request,image:Annotated[UploadFile, File(...)]):
     #preprocess
+
+
+    # filename=f"handsketch"
+    # blob = bucket.blob(f"{filename}")
+    # image.file.seek(0)
+    # blob.upload_from_file(image.file, content_type=image.content_type)
+    # image.close()
+
+
+
     data = await image.read()
     image = Image.open(io.BytesIO(data))
     image = image.resize((256, 256))
     image = np.array(image) - 127.5 / 127.5
     image = np.expand_dims(image, axis = 0)
-
+    
     models= "model_0002000.h5"
-    blob = bucket.blob(models)
+    blob= bucket.blob(models)
     blob.download_to_filename(models)
 
     model = tf.keras.models.load_model(models)
@@ -53,7 +63,7 @@ async def upload_image(request: Request,image:Annotated[UploadFile, File(...)]):
     shape = predictions.shape
     predictions = np.reshape(predictions, (256, 256, 3))
     
-    predictions = (predictions + 0.5) / 2.0
+    predictions = (predictions) / 2.0
     integer_rgb_array = np.uint8((predictions + 0.5) * 255)
     # predicted_image = Image.fromarray(integer_rgb_array, mode = "RGB")
     predicted_image = Image.fromarray(integer_rgb_array)
