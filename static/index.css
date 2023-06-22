@@ -268,11 +268,12 @@
 }
 .sketchooo-1-icon {
   position: absolute;
-  top: 77px;
-  left: 92px;
-  width: 155px;
-  height: 40.43px;
-  object-fit: cover;
+  top: 0px;
+  left: 45px;
+  width: 150px;
+  height: 150px;
+  /* object-fit: cover; */
+  object-fit: contain;
 }
 .frame-item {
   position: absolute;
