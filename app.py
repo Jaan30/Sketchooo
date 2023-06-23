@@ -34,35 +34,22 @@ bucket= storage_client .get_bucket(bucket_name)
 img="https://storage.cloud.google.com/hand-sketches/n07739125_5365-1.png"
 @app.post("/upload")
 async def upload_image(request: Request,image:Annotated[UploadFile, File(...)]):
-    #preprocess
-
-
-    # filename=f"handsketch"
-    # blob = bucket.blob(f"{filename}")
-    # image.file.seek(0)
-    # blob.upload_from_file(image.file, content_type=image.content_type)
-    # image.close()
-
-
-
+    
     data = await image.read()
-    image = Image.open(io.BytesIO(data))
-    image = image.resize((256, 256))
-    image = np.array(image) - 127.5 / 127.5
-    image = np.expand_dims(image, axis = 0)
-    
-    models= "model_0002000.h5"
-    blob= bucket.blob(models)
-    blob.download_to_filename(models)
+    input_image = Image.open(io.BytesIO(data))
+    input_image = input_image.resize((256, 256))
+    input_array = np.array(input_image) - 127.5 / 127.5
+    input_array = np.expand_dims(input_array, axis=0)
 
-    model = tf.keras.models.load_model(models)
-    predictions = model.predict(image)
+    model_path = "model_0002000.h5"
+    blob = bucket.blob(model_path)
+    blob.download_to_filename(model_path)
 
-    os.remove(models)
+    model = tf.keras.models.load_model(model_path)
+    predictions = model.predict(input_array)
 
-    shape = predictions.shape
+    os.remove(model_path)
     predictions = np.reshape(predictions, (256, 256, 3))
-    
     predictions = (predictions) / 2.0
     integer_rgb_array = np.uint8((predictions + 0.5) * 255)
     # predicted_image = Image.fromarray(integer_rgb_array, mode = "RGB")
@@ -73,3 +60,4 @@ async def upload_image(request: Request,image:Annotated[UploadFile, File(...)]):
     encoded_img=base64.b64encode(byte_data).decode('utf-8')
     # print(predictions)
     return templates.TemplateResponse("index.html", {"request": request, "img":encoded_img})
+

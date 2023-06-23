@@ -71,7 +71,7 @@
 }
 .upload-cloud-icon {
   position: absolute;
-  top: 117px;
+  top: 137px;
   left: 844px;
   width: 112px;
   height: 113px;
@@ -83,7 +83,7 @@
   left: 185px;
 }
 .capture,
-.download,
+.down_load,
 .upload {
   position: absolute;
   top: 650px;
@@ -91,12 +91,12 @@
   display: inline-block;
   width: 92px;
 }
-.download,
+.down_load,
 .upload {
   top: 304px;
   left: 854px;
 }
-.download {
+.down_load {
   top: 653px;
   left: 1175px;
   width: 115px;
@@ -148,23 +148,7 @@
   text-align: center;
   display: inline-block;
 }
-.drag-drop {
-  top: 92.39px;
-  left: 0;
-  font-size: 32px;
-  color: var(--color-black);
-  width: 234.34px;
-  height: 42.15px;
-}
-.max-10mb,
-.or-select-files {
-  top: 134.54px;
-  left: 6.64px;
-  font-size: 24px;
-  color: rgba(0, 0, 0, 0.75);
-  width: 216.32px;
-  height: 69.05px;
-}
+
 .max-10mb {
   top: 270.51px;
   left: 65.46px;
@@ -173,15 +157,7 @@
   width: 94.88px;
   height: 15.25px;
 }
-.submit {
-  position: absolute;
-  top: 570.76px;
-  left: 530.46px;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.72);
-  width: 94.88px;
-  height: 20.25px;
-}
+
 .pred
 {
     border: none;
@@ -276,14 +252,7 @@
   bottom: 21.03%;
   left: 90.46%;
 }
-.sketchooo-1-icon {
-  position: absolute;
-  left: 50px;
-  width: 190px;
-  height: 190px;
-  /* object-fit: cover; */
-  object-fit: contain;
-}
+
 .frame-item {
   position: absolute;
   top: 0;
