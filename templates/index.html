@@ -49,10 +49,12 @@
         height: 42.15px;
       }
       .download-image{
+
+        position: relative;
         font-size: 12px;
         background-color: transparent;
-        top: 650px;
-        left: 550px;
+        top: 595px;
+        left: 820px;
         border: none;
         outline: none;
         cursor: pointer;
@@ -136,7 +138,7 @@
 
      <!-- <a class="download" href="data:image/png;base64,{{img}}">Download</a> -->
 
-     <!-- <button type="button" class="download-image" data-download="myImage">Download Image</button> -->
+     <button type="button" class="download-image" data-download="myImage">Download Image</button>
      <script>
      const downloadLinks = document.querySelectorAll(" [data-download]");
      downloadLinks.forEach(button => {
