@@ -41,7 +41,7 @@ async def upload_image(request: Request,image:Annotated[UploadFile, File(...)]):
     input_array = np.array(input_image) - 127.5 / 127.5
     input_array = np.expand_dims(input_array, axis=0)
 
-    model_path = "model_0002000.h5"
+    model_path = "model_0002080.h5"
     blob = bucket.blob(model_path)
     blob.download_to_filename(model_path)
 
