@@ -158,7 +158,16 @@
   width: 94.88px;
   height: 15.25px;
 }
-
+/* .input-image
+{
+  border: none;
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 420px;
+    left: 750px;
+} */
 .pred
 {
     border: none;
