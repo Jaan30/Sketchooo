@@ -38,10 +38,10 @@ async def upload_image(request: Request,image:Annotated[UploadFile, File(...)]):
     data = await image.read()
     input_image = Image.open(io.BytesIO(data))
     input_image = input_image.resize((256, 256))
-    input_array = np.array(input_image) - 127.5 / 127.5
+    input_array = np.array(input_image) / 255
     input_array = np.expand_dims(input_array, axis=0)
 
-    model_path = "model_0002080.h5"
+    model_path = "Swan_2700.h5"
     blob = bucket.blob(model_path)
     blob.download_to_filename(model_path)
 
@@ -54,6 +54,8 @@ async def upload_image(request: Request,image:Annotated[UploadFile, File(...)]):
     integer_rgb_array = np.uint8((predictions + 0.5) * 255)
     # predicted_image = Image.fromarray(integer_rgb_array, mode = "RGB")
     predicted_image = Image.fromarray(integer_rgb_array)
+
+
     byte_data=io.BytesIO()
     predicted_image.save(byte_data,format= 'PNG')
     byte_data=byte_data.getvalue()
